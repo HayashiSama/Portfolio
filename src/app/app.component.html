@@ -1,0 +1,295 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand">Peter Lin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent" [ngbCollapse]="!isCollapsed">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" [ngx-scroll-to]="'#top'" [ngx-scroll-to-offset]="-80"> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" [ngx-scroll-to]="'#about'" [ngx-scroll-to-offset]="-80"> About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" [ngx-scroll-to]="'#experience'" [ngx-scroll-to-offset]="-60"> Experience <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" [ngx-scroll-to]="'#skills'" [ngx-scroll-to-offset]="-80"> Skills <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" [ngx-scroll-to]="'#projects'" [ngx-scroll-to-offset]="-60"> Projects <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header>
+
+<div class="main-bg">
+
+<div class="carousel-container container" id="top">
+  <ngb-carousel>  
+   <ng-template ngbSlide>
+    <div>
+      <img [src]="images[0].source" alt="rest1">
+    </div>
+    <div class="carousel-caption">
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <img [src]="images[1].source" alt="rest2">
+    </div>
+    <div class="carousel-caption">
+
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <img [src]="images[2].source" alt="geeks">
+    </div>
+    <div class="carousel-caption">
+
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <img [src]="images[3].source" alt="pokemon1">
+      <div class="shadow"></div>
+    </div>
+    <div class="carousel-caption">
+
+    </div>
+  </ng-template>
+    <ng-template ngbSlide>
+    <div>
+      <img class="smaller" [src]="images[4].source" alt="pokemon2">
+      <div class="shadow"></div>
+    </div>
+    <div class="carousel-caption">
+
+    </div>
+  </ng-template>
+</ngb-carousel>  
+
+</div>
+
+<div ngsReveal class="about container" id="about">
+  <h2> About Me </h2>
+  <div class="row justify-content-around">
+    <div class="profile-image col-lg-3 col-md-4">
+      <img src="/assets/images/profile.jpg" class="profile-pic" alt="profile.jpeg">
+    </div>
+    <div class="about-me col-lg-9 col-md-8">
+      I grew up in San Jose, and have always loved puzzles and logic problems. After graduating from UC Davis with a degree in  Computer Science, I joined TCS, a multinational organization providing Digital Solutions, IT Services, and Consulting. While there I helped developed automated monitoring tools and oversaw the deployment of new features for both the AmericanExpress.com and ToyotaFinancial.com websites. In addition, we also provided technical support in the advent of major issues. It was on these projects where I decided that I loved web development, and loved learning new technologies. So, I picked up new technologies such as MongoDB, Angular, and Swift to expand my skills. In my spare time I enjoy playing MTG, Board Games, and Reading
+    </div>
+  </div>
+</div>
+<div class="post-about parallax">
+  </div>
+
+<div class="experience container" id="experience">
+  <h2 ngsReveal> Experience </h2>
+    <div ngsReveal  class="col-md-10  offset-md-1 exp-element">
+        <h5 ><strong >Tata Consultancy Services - American Express </strong> - Phoenix, AZ</h5>
+        <h5 ><strong >Software Developer</strong></h5>
+        <h5 >Jan 2015 - Jun 2017</h5>
+      <ul >
+        <li >Ensured site reliability through proactive and automated monitoring</li>
+        <li >Worked with multiple teams to push new code and features to production environments</li>
+        <li >Provided technical support and coordinated efforts in the advent of major infrastructure issues</li>
+      </ul>
+    </div>
+    <div ngsReveal  class="col-md-10  offset-md-1 exp-element">
+        <h5 ><strong >Tata Consultancy Services - Toyota Financial Services </strong> - Torrance, CA</h5>
+        <h5 ><strong >Software Developer</strong></h5>
+        <h5 >Feb 2014 - Jan 2015</h5>
+      <ul >
+        <li >Worked with team to update and rework the website along with the mobile apps for Android and iOS</li>
+        <li >Oversaw the deployment and the subsequent decomissioning of infrastructure</li>
+      </ul>
+    </div>
+
+
+  <div  ngsReveal  class="col-md-10 offset-md-1">
+        <h5 ><strong >Coding Dojo</strong> - San Jose, CA</h5>
+        <h5 ><strong >Web Development Student</strong></h5>
+        <h5 >Jan 2018 - May 2018</h5>
+      <ul >
+        <li >Studied Javascript, Python, Swift, and HTML/CSS</li>
+        <li >Created webpages with Django &amp; MEAN frameworks with SQL and MongoDB databases for Back-End</li>
+        <li >Worked closely with other students for pair programming and git collaboration</li>
+        <li >Built many small web applications front to back.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="post-experience parallax">
+  </div>
+
+    <div class="skills-container container" id="skills">
+      <h2 ngsReveal> Skills </h2>
+  <div  class="row justify-content-center skills" >
+    <div ngsReveal  class="col-lg-5 col-md-5 col-sm-5 portfolio-item">
+      <div  class="card h-100">
+        <div  class="card-header">
+          <i  class="fa fa-code"></i> Languages
+        </div>
+        <div  class="card-body">
+          <ul  class="card-text">
+            <li >Javascript</li>
+            <li >Python</li>
+            <li >Swift</li>
+            <li >Java</li>
+            <li >C</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div ngsReveal  class="col-lg-5 col-md-5 col-sm-5 portfolio-item">
+      <div  class="card h-100">
+        <div  class="card-header">
+            <i  class="fa fa-desktop"></i> Front End
+        </div>
+        <div  class="card-body">
+          <ul  class="card-text">
+            <li> HTML / CSS</li>
+            <li> Angular</li>
+            <li> jQuery</li>
+            <li> AJAX </li>
+            <li> Bootstrap</li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div ngsReveal  class="col-lg-5 col-md-5 col-sm-5 portfolio-item">
+      <div  class="card h-100">
+        <div  class="card-header">
+            <i  class="fa fa-database"></i> Back End
+        </div>
+        <div  class="card-body">
+          <ul  class="card-text">
+            <li >Node.js</li>
+            <li >Express</li>
+            <li >Django</li>
+            <li >Mongoose</li>
+            <li >MongoDB</li>
+            <li >MySQL</li>
+            <li >Flask</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div ngsReveal  class="col-lg-5 col-md-5 col-sm-5 portfolio-item">
+      <div  class="card h-100">
+          <div  class="card-header">
+            <i  class="fa fa-sitemap"></i> Misc
+          </div>
+        <div  class="card-body">
+          <ul  class="card-text">
+            <li >AWS</li>
+            <li >Restful API</li>
+            <li >JSON</li>
+            <li >Git</li>
+            <li >Microsoft Excel</li>
+            <li >socket.io</li>
+
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="post-skills parallax">
+  </div>
+
+   <div class="projects-container container" id="projects">
+      <h2 ngsReveal> Projects </h2>
+      <div ngsReveal class="row projects">
+      <div class="card col-lg-3 col-md-4 col-sm-6">
+        <a href="https://github.com/HayashiSama/Restaurant_app" target="_blank">
+        <img class="card-img-top" src="/assets/images/restdemo.gif" alt="WEEH">
+        <div class="card-body">
+          <h5 class="card-title">Where Eat, Eat Here?</h5>
+          <p class="card-text">A Web-application built with a partner using Python/Django that uses Yelp + Google Map API's to match groups to potential restaurants based on the tastes of that group's members. Worked primarily on configuring APIs and backend logic.</p>
+          
+        </div>
+        </a>
+      </div>
+      <div class="card col-lg-3 col-md-4 col-sm-6" >
+        <a href="https://www.geeksocialize.com" target="_blank">
+        <img class="card-img-top" src="/assets/images/Geeks.png" alt="GeekSocialize">
+        <div class="card-body">
+          <h5 class="card-title">GeekSocialize</h5>
+          <p class="card-text">A Web-application built with MongoDB, Express.js, Angular, and Node.js for helping people of similar interests meetup in comfortable settings. Still under construction. </p>
+          <p> Role: Lead Developer. </p>
+         
+        </div>
+        </a>
+      </div>
+      
+      <div class="card col-lg-3 col-md-4 col-sm-6">
+        <a href="https://github.com/HayashiSama/PokemonAdventure" target="_blank">
+        <img class="card-img-top" src="/assets/images/pokemonDemo.gif" alt="PokemonAdventure">
+        <div class="card-body">
+          <h5 class="card-title">Pokemon Adventure Game</h5>
+          <p class="card-text">An adventure game built by myself based on Pokemon, incorporating a leveling system, a fully functioning combat system based on the Pokemon combat system, and featuring all the most popular Pokemon. Built with MEAN for the web app version and iOS/Swift for the mobile app version.</p>
+          
+        </div>
+       </a>
+      </div>
+
+    </div>
+
+  </div>
+
+    <div class="post-projects parallax">
+  </div>
+  <div class="contact container" id="contact">
+
+
+    <div class="container-fluid mt-3 blackbox" id="contact">
+  <div ngsReveal class="row">
+    <div  class="col-sm-12 text-center">
+      <h2 data-sr-id="17">
+        <strong >Contact Me</strong>
+      </h2>
+    </div>
+  </div>
+  <div class="row justify-content-around" id="connect" data-sr-id="18">
+    <div  class="col-sm-4">
+      <a  href="https://github.com/HayashiSama" target="_blank">
+        <fa name="github" size="3x"></fa>
+      </a>
+      <h6 >GIT</h6>
+    </div>
+    <div  class="col-sm-4">
+      <a  href="https://www.linkedin.com/in/peterlin91/" target="_blank">
+        <fa name="linkedin" size="3x"></fa>
+      </a>
+      <h6 >Linkedin</h6>
+    </div>
+    <div  class="col-sm-4">
+      <a  href="mailto:ptrlin@ucdavis.edu" target="_blank">
+        <fa name="envelope-square" size="3x"></fa>
+      </a>
+      <h6 >Email: ptrlin@ucdavis.edu</h6>
+    </div>
+  </div>
+
+
+  
+  </div>
+  </div>
+  
+
+</div>
+

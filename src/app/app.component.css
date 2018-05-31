@@ -1,0 +1,105 @@
+.navbar {background-color: #020202; color: #f4f4f4; max-height: 75px; font-family: "Lato", sans-serif}
+.navbar a {color: #f4f4f4;}
+.navbar a:hover { color: #999999; }
+h2{font-family: "Lato", sans-serif}
+ul { list-style: none; }
+.main-bg li:before { content: "-"; padding-right:7px; color: #d9000f;}
+.navbar-brand{font-size: 18pt}
+.nav-link{font-size: 14pt}
+
+.container{margin-left: 0px; margin-right: 0px; min-width: 100%; font-family: "Lato"}
+.carousel{max-height: 600px; max-width: 100%; margin-left: auto; margin-right: auto}
+.carousel-item { max-width: 100%; height: 500px }
+.carousel img{width: 100%; height: 500px; max-width: 100%;}
+.container {position:relative;}
+.main-bg {/* background: repeating-linear-gradient(
+	45deg,
+	#000000,
+	#000000 20px,
+	#030303 20px,
+	#030303 21px
+	);*/
+	background-image: url('//c1.staticflickr.com/6/5163/5247028752_a4979a86d1_b.jpg');
+	height: 100%; 
+	padding-top: 75px;
+	padding-bottom: 75px;     
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+
+.shadow{position:absolute; width:100%; height: 100%; box-shadow: 0px 0px 25px 40px  #020202 inset; top: 0; left: 0;}
+
+.about {text-align: center; background-color: #020202; color: #f4f4f4; padding-top: 25px; padding-bottom: 25px;}
+.about h2{margin-bottom:30px; font-weight:800; font-size:30px; color: #f4f4f4; padding-top: 50px; }
+.profile-pic{ width: 240px; border-radius: 300px;}
+.profile-image{padding-top: 1rem}
+.about p{padding: 0px;}
+
+@media (min-width: 544px) {  
+	.profile-pic{ width: 220px; border-radius: 300px; margin-bottom: 10px}
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+	.profile-pic{ width: 180px; border-radius: 300px; }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.profile-pic{ width: 200px; border-radius: 300px; }
+	.about-me{ padding-top: 2rem }
+	.carousel{max-height: 600px; max-width: 992px;}
+	.carousel-item { max-width: 992px; max-height: 500px }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+   .profile-pic{ width: 200px; border-radius: 300px; }
+   .about-me{ padding-top: 3rem }
+   .carousel{max-height: 600px; max-width: 992px;}
+   .carousel-item { max-width: 992px; max-height: 500px }
+}
+/* parallax stuff */
+.post-about {background-image: url("/assets/images/mountains.png");}
+.post-experience {background-image: url("/assets/images/forest.jpg");}
+.post-skills {background-image: url("/assets/images/plains.jpg");}
+.post-projects {background-image: url("/assets/images/island.jpg");}
+.parallax { height: 200px; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;	 }
+
+.about h2:after{content:" "; min-width: 300px; max-width:300px; height:1px; background:#d9000f; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
+.about p{padding-left: 50px; padding-right: 50px}
+.experience { text-align: center; font-family: "Lato", sans-serif; background-color: #020202; color: #f4f4f4; padding-top: 25px; padding-bottom: 25px;}
+.experience h2{margin-bottom:30px; font-weight:800; font-size:30px; color: #f4f4f4; }
+.experience h2:after{content:" "; min-width: 300px; max-width:300px; height:1px; background:#d9000f; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
+.experience p {font-size: 16pt; font-family: "Lato", sans-serif}
+.experience .exp-element:after{content:" "; min-width: 50px; max-width:50px; height:1px; background:#d9000f; display:block; margin:20px 0px; border-radius:3px; margin-left:auto;margin-right:auto}
+/* White: f4f4f4 Red: d9000f Black: #020202 */
+
+.skills-container h2{font-size:30px; color: #f4f4f4; text-align: center; font-family: "Lato";}
+
+.skills{max-width: 800px; margin-left: auto;  margin-right:auto; background-color: #020202; color: #f4f4f4; text-align: center;}
+.skills .card-header{background-color: #020202 }
+.skills .card-body{background-color: #020202;}
+.skills .card{ margin:25px; border-color: #f4f4f4; border-width: 3px; border-radius: 5px}
+.skills .card-text{padding-left: 0px;}
+.portfolio-item{margin-bottom: 75px;}
+.skills .card:hover{box-shadow:  0px 0px 10px 2px #f4f4f4}
+.skills-container{margin-top: 50px}
+
+.projects-container{padding-top: 25px}
+.projects-container h2{font-size:30px; color: #f4f4f4; text-align: center; font-family: "Lato"; }
+.projects {color: #f4f4f4;}
+.projects { padding: 25px; justify-content: center } 
+.projects .card {margin: 25px; background: #020202; padding: 5px;}
+.projects .card:hover{box-shadow:  0px 0px 10px 2px #f4f4f4}
+.projects img{ height: 180px; max-width: 100% }
+.projects a {margin: 0px; padding: 0px; display: inline-block; color: #f4f4f4;}
+.projects a:hover{text-decoration: none}
+
+.contact {text-align: center;  background-color: #020202; color: #f4f4f4; padding-top: 25px; padding-bottom: 25px;}
+.contact a{color:  #f4f4f4;}
+.contact i { border-radius: 4px; border: 5px solid white; background-color: white; padding: 5px;}
+.contact h2:after{content:" "; min-width: 300px; max-width:300px; height:1px; background:#d9000f; display:block; margin-top:20px; margin-bottom: 20px; border-radius:3px; margin-left:auto;margin-right:auto}
+.contact h5 {margin-top: 5px}
