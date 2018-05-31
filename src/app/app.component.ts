@@ -11,6 +11,7 @@ import { NgsRevealModule } from 'ng-scrollreveal';
   providers: [NgbCarouselConfig]
 })
 export class AppComponent {
+  isCollapsed: any;
 
 	constructor(config: NgbCarouselConfig) {  
         config.interval = 5000;  
