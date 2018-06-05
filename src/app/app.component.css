@@ -9,8 +9,8 @@ ul { list-style: none; }
 
 .container{margin-left: 0px; margin-right: 0px; min-width: 100%; font-family: "Lato"}
 .carousel{max-height: 600px; max-width: 100%; margin-left: auto; margin-right: auto}
-.carousel-item { max-width: 100%; height: 500px }
-.carousel img{width: 100%; height: 500px; max-width: 100%;}
+.carousel-item { max-width: 100%; height: 300px }
+.carousel img{width: 100%; height: 300px; max-width: 100%;}
 .container {position:relative;}
 .main-bg {/* background: repeating-linear-gradient(
 	45deg,
@@ -44,6 +44,8 @@ ul { list-style: none; }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
 	.profile-pic{ width: 180px; border-radius: 300px; }
+	.carousel-item { max-width: 100%; height: 400px }
+	.carousel img{width: 100%; height: 400px; max-width: 100%;}
 }
  
 /* Large devices (desktops, 992px and up) */
@@ -52,6 +54,7 @@ ul { list-style: none; }
 	.about-me{ padding-top: 2rem }
 	.carousel{max-height: 600px; max-width: 992px;}
 	.carousel-item { max-width: 992px; max-height: 500px }
+	.carousel img{width: 100%; height: 500px; max-width: 100%;}
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
@@ -60,6 +63,7 @@ ul { list-style: none; }
    .about-me{ padding-top: 3rem }
    .carousel{max-height: 600px; max-width: 992px;}
    .carousel-item { max-width: 992px; max-height: 500px }
+   .carousel img{width: 100%; height: 500px; max-width: 100%;}
 }
 /* parallax stuff */
 .post-about {background-image: url("/assets/images/mountains.png");}
@@ -78,6 +82,7 @@ ul { list-style: none; }
 /* White: f4f4f4 Red: d9000f Black: #020202 */
 
 .skills-container h2{font-size:30px; color: #f4f4f4; text-align: center; font-family: "Lato";}
+.skills-container h2:after{content:" "; width:200px; height:1px; background:#d9000f; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
 
 .skills{max-width: 800px; margin-left: auto;  margin-right:auto; background-color: #020202; color: #f4f4f4; text-align: center;}
 .skills .card-header{background-color: #020202 }
@@ -97,6 +102,7 @@ ul { list-style: none; }
 .projects img{ height: 180px; max-width: 100% }
 .projects a {margin: 0px; padding: 0px; display: inline-block; color: #f4f4f4;}
 .projects a:hover{text-decoration: none}
+.projects-container h2:after{content:" "; width:200px; height:1px; background:#d9000f; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
 
 .contact {text-align: center;  background-color: #020202; color: #f4f4f4; padding-top: 25px; padding-bottom: 25px;}
 .contact a{color:  #f4f4f4;}
